@@ -1,6 +1,6 @@
 # MySQL-Garela cluster in Azure setup
 How to configure a MySQL Galera cluster to work with Azure.
-This document asumes that a MytSQL cluster is being installed already in 3 instances of an Azure's cloud service, for more information about how to install a Galera custer please got to:
+This document asumes that a MytSQL Galera has been installed already in 3 instances of an Azure's cloud service, for more information about how to install a Galera custer please got to:
 http://galeracluster.com/documentation-webpages/installmariadb.html
 
 ## Microsoft Azure Xplat-CLI
