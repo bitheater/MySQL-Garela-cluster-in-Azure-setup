@@ -8,8 +8,8 @@ http://galeracluster.com/documentation-webpages/installmariadb.html
     Ref: https://github.com/Azure/azure-xplat-cli
     cross-platform command line interface for developers and IT administrators to develop, deploy and manage Microsoft Azure applications.
     - Install Azure Xplat-CLI
-    ## Installation
 
+## Installation
 ### Install from npm
 
 You can install the azure-cli npm package directly.
@@ -39,6 +39,23 @@ curl -sL https://deb.nodesource.com/setup | sudo bash -
 sudo apt-get install -y nodejs
 sudo npm install -g azure-cli
 ```
+## Configure Azure's client
+
+  - Download credentials to connect azure
+  
+    azure account download
+    ...
+    info:    Launching browser to http://go.microsoft.com/fwlink/?LinkId=254432
+    ...
+  
+  Copy and paste the url in a browser 
+  It will allow you to download a file with credentials that we can use to connect with azure's client from our database servers
+  
+  - Place this file in a safe directory in your MySQL servers
+  - Import the credentials file in to azure's client
+  
+     azure account import /path/to/downloaded/credentials/file
+  
 
 ## MySQL Galera Notification Command
 
